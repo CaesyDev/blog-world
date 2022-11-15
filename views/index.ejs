@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Articles</title>
+  </head>
+  <body>
+    <h2 style="text-align: center">Welcome to blog club</h2>
+
+   <div>
+    <center>
+        <a href="/signup"><button style="padding:10px">Signup</button></a>
+        <a href="/login"><button style="padding:10px">Login</button></a>
+    </center>
+   </div>
+
+    <p style="margin-top:30px; text-align:justify; padding:30px;">
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book. It has survived not only five centuries, but
+      also the leap into electronic typesetting, remaining essentially
+      unchanged. It was popularised in the 1960s with the release of Letraset
+      sheets containing Lorem Ipsum passages, and more recently
+    </p>
+
+    <h2>Blog section</h2>
+    <p>Want to write your own blogs? <span style="color:red">signup and login to begin</span></p>
+
+
+    <% if(blogs.length > 0) { %> 
+        <% blogs.forEach((blog) => { %>
+
+    <a href="blog/<%= blog.id %>">
+      <span style="display:block;"><%= blog.title %> </span>
+      <% let part = blog.content.slice(0, 25) %> 
+      <span style="color:black; font-size:smaller; margin-bottom:30px;">  <%= part  %>   .....</span><br>
+    </a><br>
+
+    <% }) %> 
+    <% }else{ %>
+    <h3>No records found</h3>
+    <% } %>
+
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+
+.pro{
+  box-shadow: 2px 0 2px 2px #aaaaaa;
+  margin-bottom: 30px;
+}
+
+    .overlay{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: rgba(255,255,255,0.5) url("../loader3.gif") center no-repeat;
+    }
+
+    .over{
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+
+
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 150px;
+        color: black;
+        animation: fadeIn linear 7s;
+        -webkit-animation: fadeIn linear 7s;
+        -moz-animation: fadeIn linear 7s;
+        -o-animation: fadeIn linear 7s;
+        -ms-animation: fadeIn linear 7s;
+    }
+
+
+  
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#11182B;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d7caca;
+  display: block;
+  transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+  color: #f4b53f;
+}
+
+
+.lgnav1 a:hover {
+  color: #f4b53f;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+    body{
+        text-align: center;
+    }
+    /* Turn off scrollbar when body element has the loading class */
+    body.loading{
+        overflow: hidden;   
+    }
+    /* Make spinner image visible when body element has the loading class */
+    body.loading .overlay{
+        display: block;
+    }
+
+    
+#lgnav{
+   display: none;
+  }
+
+
+  #hamr{
+    display: none;
+   }
+
+
+
+  #notify{
+    color:black; 
+    border:2px solid #F9D48E; 
+    background-color:white; 
+    width:max-content; 
+    margin-top:10px; 
+    text-align:center;
+  }
+
+
+  #notify:hover{
+      background-color: #F9D48E;
+  }
+
+
+  .back{
+    margin-top:100px;
+    background-image: url("./images/back.jpg");
+    background-repeat: none;
+    background-size: cover;
+  }
+
+  
+
+
+
+@media only screen and (min-width: 1030px) {
+
+  #lgnav{
+   display: block;
+  }
+  
+
+}
+
+
+
+ @media only screen and (max-width: 1029px) {
+
+  #hamr{
+   display:inline-block;
+  }
+  
+
+} 
+
+
+
+
+@media only screen and (min-width: 1000px) {
+
+  .row{
+   padding-left: 40px;
+   padding-right: 40px;
+   /* padding:40px; */
+  }
+  
+  #pad{
+      padding-left:150px;
+  }
+  
+  #mynav{
+      padding-top:20px;
+      padding-bottom:20px;
+  }
+  
+  
+  }
